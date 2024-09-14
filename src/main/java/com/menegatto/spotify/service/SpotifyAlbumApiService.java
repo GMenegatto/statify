@@ -2,10 +2,7 @@ package com.menegatto.spotify.service;
 
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
-import com.menegatto.spotify.dto.AlbumDTO;
 import com.menegatto.spotify.dto.AlbumResponseDTO;
-import com.menegatto.spotify.dto.LoginRequest;
-import com.menegatto.spotify.dto.LoginResponse;
 import com.menegatto.spotify.utils.ObjectUtils;
 import org.apache.coyote.BadRequestException;
 import org.springframework.stereotype.Service;
