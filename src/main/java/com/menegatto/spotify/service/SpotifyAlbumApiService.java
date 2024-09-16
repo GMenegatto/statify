@@ -15,6 +15,7 @@ public class SpotifyAlbumApiService {
     public AlbumResponseDTO getNewReleases(final String auth) throws BadRequestException, UnirestException {
         return Optional.ofNullable(Unirest.get("https://api.spotify.com/v1/browse/new-releases")
                 .queryString("limit", 5)
+                .queryString("offset", 10)
                 .header("Content-Type", "application/json")
                 .header("Authorization", auth)
                 .asString()).map(json -> ObjectUtils.convertToObject(AlbumResponseDTO.class, json.getBody()))

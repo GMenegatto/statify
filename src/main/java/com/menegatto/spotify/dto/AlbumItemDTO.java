@@ -11,11 +11,22 @@ public class AlbumItemDTO {
     @JsonProperty("images")
     private List<AlbumImageDTO> images;
 
+    @JsonProperty("name")
+    private String name;
+
     public List<AlbumImageDTO> getImages() {
         return images;
     }
 
     public void setImages(List<AlbumImageDTO> images) {
         this.images = images;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

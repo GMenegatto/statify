@@ -1,0 +1,85 @@
+@import "../../../values";
+
+.background {
+  background: $secondary;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+
+  p {
+    color: $white;
+
+    b {
+      color: $primary;
+    }
+  }
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: $white;
+
+  b {
+    color: $primary;
+  }
+}
+
+.albums {
+  display: flex;
+  gap: 20px;
+
+  .album {
+    flex: 1;
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+}
+
+.two-sections {
+  display: flex;
+  gap: 20px;
+  .top-list {
+    flex: 1;
+  }
+
+  .list {
+    display: flex;
+    background: #070707;
+    border-radius: 20px;
+    flex-direction: column;
+    padding: 20px;
+
+    .album {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 10px;
+
+      padding: 10px 10px;
+      background: #0e0e0e;
+      border-radius: 10px;
+      align-items: center;
+
+      h2 {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+      }
+    }
+    .image  {
+      max-width: 60px;
+      border-radius: 4px;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
